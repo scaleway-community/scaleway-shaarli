@@ -1,0 +1,8 @@
+# Shaarli usage
+
+Your Shaarli image is ready!
+Create a new user at http://server_ip/ and start using Shaarli.
+
+Your Shaarli instance is placed at /var/www/html/Shaarli/
+
+For further documentation, consult https://shaarli.readthedocs.io/en/master/

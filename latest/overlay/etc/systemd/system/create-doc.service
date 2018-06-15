@@ -1,0 +1,10 @@
+[Unit]
+Description=Create basic doc on first boot
+After=network.service
+
+[Service]
+ExecStart=/usr/local/sbin/scw-create-doc
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

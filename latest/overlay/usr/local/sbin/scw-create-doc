@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Update tutorial for server's IP
+PUBLIC_IP=$(scw-metadata --cached PUBLIC_IP_ADDRESS)
+sed -i "s/server_ip/$PUBLIC_IP/" /usr/share/doc/scaleway/shaarli/README
+
+# Disable the service that ran this script, only need it once
+systemctl disable create-doc
