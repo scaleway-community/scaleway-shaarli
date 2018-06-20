@@ -1,7 +1,7 @@
 ## -*- docker-image-name: "scaleway/ipfs:latest" -*-
 ARG SCW_ARCH
 
-FROM scaleway/ubuntu:${SCW_ARCH}-bionic
+FROM scaleway/ubuntu:${SCW_ARCH}-xenial
 
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
@@ -12,8 +12,8 @@ RUN /usr/local/sbin/builder-enter
 RUN apt-get update \
     && apt-get install -y \
        apache2 \
-       php7.2 \
-       libapache2-mod-php7.2 \
+       php7.0 \
+       libapache2-mod-php7.0 \
        jq
 
 # Download Shaarli
